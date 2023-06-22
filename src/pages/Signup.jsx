@@ -15,7 +15,7 @@ const Signup = ({ setUser }) => {
     try {
       event.preventDefault();
       const response = await axios.post(
-        "https://site--deltakende--47k78rj4qzvg.code.run/user/signup",
+        `${import.meta.env.VITE_API}/user/signup`,
         {
           email: email,
           password: password,
