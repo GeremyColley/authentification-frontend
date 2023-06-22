@@ -17,7 +17,7 @@ const Login = ({ setUser }) => {
       event.preventDefault();
       setIsLoading(true);
       const response = await axios.post(
-        `${import.meta.env.VITE_API}/user/login`,
+        "https://site--deltakende--47k78rj4qzvg.code.run/user/login",
         {
           email: email,
           password: password,
